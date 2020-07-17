@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Super Genius!!!</title>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&family=Epilogue&display=swap" 
+            rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link href="queries.css" rel="stylesheet">
+
+        <script src="dascript.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- from here 30dd before final commit -->
+	<script>
+		function degMij() {	
+			var w = document.documentElement.clientWidth; 
+			var h = document.documentElement.clientHeight;
+			var txt = w + "(w) x " + h + "(h)"
+		
+			document.getElementById("perm").innerHTML = txt; 
+		}
+		function start() {
+			degMij();
+			setTimeout("location.reload(true)", 5000);
+			/* set to 5sec, feel free to mess with it */
+		}
+	</script>
+	<style>
+		#perm {
+			position: fixed;
+			top: 0;
+			right: 0;
+			z-index: 100;
+			width: 135px;
+			height: 25px;
+			background-color: #E0F5CF; 
+			color: black;
+			text-align: center;
+		}
+	</style>
+<!-- dd to here, also the degMij() and start() ref 2j below. Leave body open tag -->
+    </head>
+    <body onresize="degMij()">
+        <p id="perm">No Bueno!</p>
+        <img class="topimg" id="img1" src="Img/Main/wheadshot.jpeg" alt="The main man head shot"/>
+        <img class="topimg" id="img2" src="Img/Main/wileysg.jpeg" alt="Super Genius Label" />
+
+        <h1>Wile E. Coyote!</h1>
+        <h2>Super Genius!</h2>
+
+        <section class="main">
+            <p>Are YOU suffering from a persistent pest problem?<br/>
+              Looking for a permanent solution?<br/>
+              Wile E. Coyote is here for you!<br/>
+              Your search is over!
+            </p>
+        
+            <img class="midimg" id="img3" src="Img/Main/card.jpeg" alt="A business card" />
+
+            <p>Wile E. Coyote has a vast amount of experience employing the latest technological 
+              advancements in the pursuit of feathered and fur covered nuisances.<br/>
+              Knowledge includes, but is not limited to, the use of:
+                <ul><li>Explosives</li>
+                    <li>Flight suits</li>
+                    <li>Advanced mobility devices</li>
+                    <li>Anvils</li>
+                    <li>And more...</li>
+                </ul>
+            </p>
+        </section>
+
+        <hr/>
+
+        <div id="penultim"> 
+        <section id="forma">
+            <p>So what are you waiting for!<br/>Contact Wile E. Coyote now!</p>
+
+            <hr width="55%"/>
+
+            <form id="form01" name="daForm" action="" onsubmit="return oFunctie()" method="post">
+                <label for="name">Who are you?</label><br/>
+                <input type="text" id="name" name="name"><br/>
+                <hr width="70%"/>
+                <label for="email">Your email address?</label><br/>
+                <input type="email" id="email" name="email"><br/>
+                <input type="submit" class="btn btn-outline-danger" id="subtn" value="Contact Me!">
+            </form>
+        </section>
+
+        <section id="credits">
+            <p>Sponsored by:<br/> The ACME Company</p>
+
+            <img class="addimg" id="img99" src="Img/Main/acme01.jpeg" alt="Acme logo" />
+        </section>
+        </div>
+
+        <nav>
+            <a class="btn btn-primary btn-lg" href="traps.html">DEVICES</a>
+            <a class="btn btn-primary btn-lg" href="fly.html">IN FLIGHT</a>
+            <a class="btn btn-primary btn-lg" href="secret.html">SPECIAL</a>
+        </nav>
+
+        <hr/>
+
+		<footer>
+		    <img id='img4' src='Img/purphi.jpg' alt='Bearded Purple Dude'>
+			<p>&nbsp Created for CS50x Web Track.<br/>
+                &nbsp All images borrowed... including my own!<br/>
+				&nbsp Copyleft <span class="copyleft">&copy;</span> 2020 by M. Antonescu. All wrongs reserved!
+			</p>
+		</footer>
+        
+        <hr/>
+    </body>
+
+    <ul>
+        <li>make the site mobile friendly <br/> (we are going to have to make a separate css
+          file for this one)</li>
+    </ul>
+    
+</html>

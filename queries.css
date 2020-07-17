@@ -1,0 +1,17 @@
+/* Addapting for mobile */
+
+/* First off we will adapt the size of the text. At 765px width we are going to
+  have to transfer text size to a standard pixel size instead of a viewport 
+  related measurement */
+@media only screen and (max-width: 765px) {
+    body {
+        font-size: 20px !important;
+    }
+    footer {
+        font-size: 75%;    
+    }
+
+    .btn {
+        font-size: 75%;
+    }
+}

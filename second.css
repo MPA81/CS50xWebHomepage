@@ -1,0 +1,31 @@
+h3 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 200%; 
+}
+
+.second {
+    text-align: center;
+}
+
+.second p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 57%;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin: 1.75vh 8vw 1.75vh 8vw;
+}
+
+.second li {
+    text-align: left;
+    margin-left: 35vw;
+    font-size: 50%;
+}
+
+.trimage {
+    width: 50vw;
+}
+
+.final {
+    width: 30vw;
+}
